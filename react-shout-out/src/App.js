@@ -22,50 +22,21 @@ function App() {
 
   };
 
-  
-
-  const appStyleObject = {
-    textAlign: 'center',
-    fontFamily: 'cambria',
-    backgroundColor: 'rgb(117, 169, 143)',
-    paddingBottom: '20px'
-  };
-
-
-  const headStyleObject = {
-   
-  };
-
-
-  const messageStyleObject = {
-    border: 'solid 2px black',
-    borderRadius: '25px',
-    width: '800px',
-    height: '200px',
-    margin: 'auto auto 30px auto',
-    padding: '25px',
-    fontSize: 'large',
-    textAlign: 'left',
-    backgroundColor: 'white',
-    boxShadow: '2px 2px 3px black, -2px -2px 3px black'
-
-  };
-
 
    
   return (
-    <div className="App" style={appStyleObject}>
-      <h1 style={headStyleObject}>Your Shout-Out</h1>
-      <div className='Display-Message' style={messageStyleObject}>
+    <div className="App">
+      <h1>Your Shout-Out</h1>
+      <div className='Display-Message'>
           {shoutOut.length > 0 && 
            shoutOut[0].message}
       </div>
       
       <form onSubmit={handleSubmit} 
-      className='Form' 
-      style={messageStyleObject}> 
+      className='Display-Message'> 
+      {/* have to change this in branch one and main */}
 
-        <div>
+        <div className='Shout-Out'>
             <label htmlFor='your-message'>Shout-Out </label>
             <input id='your-message' 
                 type='text' 
@@ -75,7 +46,7 @@ function App() {
             </input>
         </div>
 
-        <div>
+        <div className='info-container'>
             <label htmlFor='name'>Name </label>
             <input id='name' 
                 type='text' 
@@ -84,7 +55,7 @@ function App() {
                 placeholder='Name'></input>
         </div>
 
-        <div>
+        <div className='info-container'>
             <label htmlFor='date'>Date </label>
             <input id='date' 
                 type='date' 
