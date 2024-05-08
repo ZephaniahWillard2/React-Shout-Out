@@ -1,0 +1,72 @@
+*{
+    margin: 0%;
+}
+
+.App{
+   text-align: center;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   background-color: rgb(117, 169, 143);
+   padding-bottom: 20px;
+}
+
+h1{
+    background-color: #D4F1F4;
+    padding: 30px;
+    border-bottom: solid;
+}
+
+.Display-Message {
+    border: solid 2px black;
+    border-radius: 25px;
+    width: 800px;
+    height: 200px;
+    margin: 30px auto 30px auto;
+    padding: 25px;
+    font-size: larger;
+    background-color: #e7fff4;
+    box-shadow: 2px 2px 3px black, -2px -2px 3px black;
+    overflow-x: scroll;
+}
+
+
+
+#your-message{
+    border: solid 2px black;
+    border-radius: 25px;
+    width: 650px;
+    height: 30px;
+    font-size: inherit;
+    padding: 0px 15px 0px 15px;
+}
+
+#name{
+    border-radius: 25px;
+    width: 200px;
+    height: 20px;
+    padding: 0px 15px 0px 15px;
+}
+
+#date{
+    border-radius: 25px;
+    width: 120px;
+    height: 20px;
+    padding: 0px 15px 0px 15px;
+    text-align: center;
+}
+
+form div{
+    text-align: left;
+    padding: 5px;
+
+}
+
+.info-container{
+text-align: center;}
+
+form button{
+    display: block;
+    margin: 5px auto auto auto;
+    padding: 3px 8px 3px 8px;
+    border-radius: 20px;
+    font-size: large;
+}
